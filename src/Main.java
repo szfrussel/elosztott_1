@@ -20,8 +20,6 @@ public class Main {
             warriorPos = getRandomNumber(3);
             wizardSPos = getRandomNumber(3);
 
-
-
             if(warriorPos == wizardSPos){
                 warrior.hurt(getRandomNumber(6));
                 wizard.hurt(getRandomNumber(6));

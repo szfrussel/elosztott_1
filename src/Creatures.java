@@ -27,6 +27,7 @@ public class Creatures {
 
     public void hurt(int hurt){
         this.lifeForce -= hurt;
+        if(this.lifeForce < 0) {this.lifeForce = 0;}
 
     }
 

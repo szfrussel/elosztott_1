@@ -2,8 +2,8 @@ public class Warrior extends Creatures {
     private int strength;  // erő
     private int armorStrength;  // páncélzat ereje
 
-    public Warrior(String species, int lifeForce, String position, int strength, int armorStrength) {
-        super(species, lifeForce, position);
+    public Warrior(int lifeForce, int position, int strength, int armorStrength) {
+        super(lifeForce, position);
         this.strength = strength;
         this.armorStrength = armorStrength;
     }

@@ -2,8 +2,8 @@ public class Wizard extends Creatures {
     private int magicPower;  // varázserő
     private String side;  // oldal (jó vagy gonosz)
 
-    public Wizard(String species, int lifeForce, String position, int magicPower, String side) {
-        super(species, lifeForce, position);
+    public Wizard(int lifeForce, int position, int magicPower, String side) {
+        super(lifeForce, position);
         this.magicPower = magicPower;
         this.side = side;
     }

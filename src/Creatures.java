@@ -25,9 +25,18 @@ public class Creatures {
         this.position = position;
     }
 
-    public void hurt(int hurt){
-        this.lifeForce -= hurt;
-        if(this.lifeForce < 0) {this.lifeForce = 0;}
+    public void hurt(int hurt) throws  NoMoreLifeException {
+        if (this.lifeForce > hurt){
+            this.lifeForce -= hurt;
+        }
+        else{
+            this.lifeForce = 0;
+            throw new NoMoreLifeException();
+
+        }
+
+        //this.lifeForce -= hurt;
+       // if(this.lifeForce < 0) {this.lifeForce = 0;}
 
     }
 
